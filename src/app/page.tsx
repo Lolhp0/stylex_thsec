@@ -11,9 +11,9 @@ export default function Home() {
 
 const styles = stylex.create({
   font: {
-    fontWeight: 800
+    fontWeight: 800,
   },
   size: {
-    fontSize: "3rem"
+    fontSize: "3rem",
   }
 })
