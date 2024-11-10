@@ -4,7 +4,7 @@ import * as stylex from "@stylexjs/stylex";
 export default function Home() {
   return (
     <>
-        <h1 {...stylex.props(styles.font, styles.size)}>Hello WORLD</h1>
+        <h1 {...stylex.props(styles.font, styles.size, styles.underline)}>Hello WORLD</h1>
     </>
   );
 }
@@ -15,5 +15,8 @@ const styles = stylex.create({
   },
   size: {
     fontSize: "3rem",
+  },
+  underline: {
+    textDecoration: "underline"
   }
 })
