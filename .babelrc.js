@@ -4,7 +4,7 @@ module.exports = {
     [
       '@stylexjs/babel-plugin',
       {
-        dev: true,
+        dev: false,
         test: false,
         runtimeInjection: false,
         genConditionalClasses: true,
