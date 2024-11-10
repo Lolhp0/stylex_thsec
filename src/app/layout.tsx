@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import * as stylex from "@stylexjs/stylex";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -14,8 +15,35 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={``}>
-        {children}
+        <div id="__jsx">
+          <div dir="ltr">
+            <div
+              {...stylex.props(
+                styles.fullWidth,
+                styles.minHeightScreen,
+                styles.systemFont,
+                styles.display,
+                styles.flexDir,
+                styles.background,
+                styles.color
+              )}
+            >
+              {children}
+            </div>
+          </div>
+        </div>
       </body>
     </html>
   );
 }
+
+const styles = stylex.create({
+  fullWidth: { width: "100%" },
+  minHeightScreen: { minHeight: "100dvh" },
+  systemFont: { fontFamily: "system-ui, sans-serif" },
+  display: {display: "flex"},
+  flexDir: {flexDirection: "column"},
+  position: {position: "relative"},
+  background: {background: "#000"},
+  color: {color: "#fff"}
+});
