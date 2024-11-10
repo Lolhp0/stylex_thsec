@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import * as stylex from "@stylexjs/stylex";
+import Script from "next/script";
+import Header from "@/components/Header";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -28,6 +30,7 @@ export default function RootLayout({
                 styles.color
               )}
             >
+              <Header/>
               {children}
             </div>
           </div>
