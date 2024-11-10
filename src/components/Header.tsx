@@ -11,7 +11,7 @@ const Header = () => {
 
 const styles = stylex.create({
     headerWidth: {width: "100%"},
-    headerHeight: {width: "60px"},
+    headerHeight: {height: "60px"},
     headerPosition: {position: "sticky"},
     headerTop: {top: 0},
     headerLeft: {left: 0},
