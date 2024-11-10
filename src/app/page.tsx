@@ -4,7 +4,7 @@ import * as stylex from "@stylexjs/stylex";
 export default function Home() {
   return (
     <>
-        <h1 {...stylex.props(styles.font, styles.size, styles.underline)}>Hello WORLD</h1>
+        <h1 id="home-text" {...stylex.props(styles.font, styles.size, styles.underline)}>Hello WORLD</h1>
     </>
   );
 }
